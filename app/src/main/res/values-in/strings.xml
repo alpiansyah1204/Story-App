@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Story Dicoding</string>
+    <string name="ErrorMassagePassword">Setidaknya harus ada 6 chacater</string>
+    <string name="button">tombol</string>
+    <string name="email">Email</string>
+    <string name="Emailhint">Masukan Email Kamu</string>
+    <string name="Namelhint">Masukan Username Kamu</string>
+    <string name="passwordlhint">Masukan password Kamu</string>
+    <string name="login">Masuk</string>
+    <string name="donthavaccount">Masih belum memiliki akun?  </string>
+    <string name="sign_up">Daftar</string>
+    <string name="sign_up1">Daftar</string>
+    <string name="haveaccount">Sudah memiliki akun?</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="description">deskirpsi</string>
+    <string name="logo">Logo</string>
+    <string name="logo2">logo2</string>
+    <string name="setting">pengaturan</string>
+    <string name="datanotfound">tidak bisa memuat data</string>
+    <string name="successlogin">berhasil untuk masuk</string>
+    <string name="failedlogin">gagal untuk masuk</string>
+    <string name="successsignup">berhasil mendaftar</string>
+    <string name="failedsignup">gagal mendaftar</string>
+    <string name="failedsignup2">gagal membuat akun</string>
+    <string name="failedlogin2">gagal masuk email atau password salah</string>
+    <string name="failedgetdata">gagal mengambil data atau data sedang kosong</string>
+    <string name="successgetdata">berhasil mengambil data atau data sedang kosong</string>
+    <string name="upload">Unggah</string>
+    <string name="floatingbutton">Floatingbutton</string>
+    <string name="camera">Camera</string>
+    <string name="galery">Galery</string>
+    <string name="add_widget">tambah widget</string>
+    <string name="app_widget_description">ini merupakan deskripsi widget</string>
+    <string name="appwidget_text">Dicoding Stories</string>
+    <string name="empty_text">tidak ada data </string>
+    <string name="photo">foto</string>
+    <string name="failedupload">gagal Upload</string>
+    <string name="retry">coba ulang</string>
+    <string name="add_post">tambah post</string>
+    <string name="maps">maps</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="add_my_location">Tambahkan lokasi saya</string>
+    <string name="quit">keluar</string>
+    <string name="menu">menu</string>
+</resources>

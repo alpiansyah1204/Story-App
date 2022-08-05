@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.signup.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dicoding_default"
+        android:contentDescription="@string/logo" />
+
+    <TextView
+        android:alpha="0"
+        android:id="@+id/singuptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/sign_up1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <TextView
+        android:alpha="0"
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/username"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/singuptext"
+        app:layout_constraintTop_toBottomOf="@+id/singuptext" />
+
+
+    <id.whynot.submission3.textInputPassword.UsernameTextInput
+        android:alpha="0"
+        android:id="@+id/inputname"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Namelhint"
+        app:layout_constraintStart_toStartOf="@+id/nametext"
+        app:layout_constraintTop_toBottomOf="@+id/nametext" />
+
+
+    <TextView
+        android:alpha="0"
+        android:id="@+id/emailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/inputname"
+        app:layout_constraintTop_toBottomOf="@+id/inputname" />
+
+
+    <id.whynot.submission3.textInputPassword.NewTextInput
+        android:alpha="0"
+        android:id="@+id/inputemail"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Emailhint"
+        app:layout_constraintStart_toStartOf="@+id/emailtext"
+        app:layout_constraintTop_toBottomOf="@+id/emailtext" />
+
+    <TextView
+        android:alpha="0"
+        android:id="@+id/passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/password"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/inputemail"
+        app:layout_constraintTop_toBottomOf="@+id/inputemail" />
+
+    <id.whynot.submission3.textInputPassword.Password
+        android:alpha="0"
+        android:hint="@string/passwordlhint"
+        android:password="true"
+        android:id="@+id/inputpasword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/passwordtext"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtext"
+        tools:ignore="Deprecated" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:alpha="0"
+        android:id="@+id/SignupBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_logion_signup"
+        android:text="@string/sign_up1"
+        android:textColor="@color/white2"
+        app:layout_constraintEnd_toEndOf="@+id/inputpasword"
+        app:layout_constraintStart_toStartOf="@+id/inputpasword"
+        app:layout_constraintTop_toBottomOf="@+id/inputpasword" />
+
+    <LinearLayout
+        android:alpha="0"
+        android:id="@+id/BottomLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SignupBTN"
+        app:layout_constraintStart_toStartOf="@+id/SignupBTN"
+        app:layout_constraintTop_toBottomOf="@+id/SignupBTN">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/haveaccount" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:shadowColor="@color/white"
+            android:text="@string/login"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/blackscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black20"
+        android:visibility="invisible"
+        android:alpha="1"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

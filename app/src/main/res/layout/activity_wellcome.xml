@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+
+    app:layoutDescription="@xml/activity_wellcome_scene"
+    tools:context=".view.welcome.WellcomeActivity">
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:contentDescription="@string/setting"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233"
+        app:srcCompat="@drawable/download" />
+
+    <ImageView
+        android:id="@+id/DIcoding"
+        android:layout_width="189dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo"
+        app:srcCompat="@drawable/dicoding" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DIcoding">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Login"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_in_wellcome"
+            android:text="@string/login"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Signup"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/button_in_wellcome"
+            android:text="@string/sign_up"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

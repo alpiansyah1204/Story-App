@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.whynot.submission3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Submission3">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBqXGV-SOT2ARxkg5tejtxsP4r4TARM6zU" />
+
+        <activity
+            android:name=".view.maps.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+
+        <receiver
+            android:name=".myStackWidget.ImagesBannerWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/image_banner_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".view.addpost.AddActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.detail.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.welcome.WellcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".view.signup.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="id.whynot.submission3"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <service
+            android:name=".myStackWidget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>
